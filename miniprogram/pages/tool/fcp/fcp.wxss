@@ -1,0 +1,4 @@
+@import "../tool.wxss";
+.item-left{
+  width: 35%;
+}

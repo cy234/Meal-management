@@ -1,0 +1,46 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="container">
+<view class="tool-detail">
+<view class="tool-title"><text>基础热量</text></view>
+<text class="tool-info">人体基础代谢需要的基础能量</text>
+</view>
+<view class="tool-form">
+<form bindsubmit='submit'>
+<view class="form-item">
+<label class='item-left' >体重</label>
+<input class="item-right" type='digit'  name='weight' style="width:58%" placeholder='请输入'></input><text>(kg）</text>
+</view>
+<view class="form-item">
+<label class='item-left'>身高</label>
+<input class="item-right"name='height'  type='digit'  style="width:58%" placeholder='请输入'></input><text>(kg）</text>
+</view>
+<view class="form-item">
+<label class='item-left' >年龄</label>
+<input class="item-right" type='number' name='age' placeholder='请输入'></input>
+
+</view>
+<view class="form-item">
+<label class='item-left' >性别:</label>
+<radio-group class='item-right' name='sex' bindchange="changeSex" >
+<radio value='男' checked=''/>男
+<radio value='女' checked=''/>女
+</radio-group>
+
+</view>
+
+<view class="btn-area">
+
+<button formType="reset" hover-class='btn_change'>重置</button>
+<button formType="submit" hover-class='btn_change'>提交</button>
+</view>
+</form>
+<view class="{{show?'result_show':'result_hide'}}">
+<view class="re-title">Result:</view>
+<view class="re-detail">
+<view>基础代谢</view>
+<view>{{result}}KJ</view>
+
+</view>
+</view>
+</view>
+</view>

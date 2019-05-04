@@ -1,0 +1,42 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="container">
+<view class="tool-detail">
+<view class="tool-title"><text>BMI指数</text></view>
+<text class="tool-info">衡量是否肥胖和标准体重的重要指标</text>
+</view>
+<view class="tool-form">
+<form bindsubmit='submit'>
+<view class="form-item">
+<label class='item-left'>体重:</label>
+<input class="item-right" name='weight' type='digit' style="width: 58%;"></input>
+<text>(kg）</text>
+</view>
+<view class="form-item">
+<label class='item-left' >身高:</label>
+<input class="item-right" name='height' type='digit' style="width: 58%;"></input>
+<text>(cm）</text>
+</view>
+<view class="form-item">
+<label class='item-left' >性别:</label>
+<radio-group class='item-right'name='sex' bindchange="changeSex" >
+<radio value='男' checked=''/>男
+<radio value='女' checked=''/>女
+</radio-group>
+</view>
+<view class="btn-area">
+
+<button formType="reset" hover-class='btn_change'>重置</button>
+<button formType="submit" hover-class='btn_change'>提交</button>
+</view>
+</form>
+<view class="{{show?'result_show':'result_hide'}}">
+<view class="re-title">Result:</view>
+<view class="re-detail">
+<view style="color:#66abd6">{{tip}}</view>
+<view>您的理想体重：{{ideal}}(kg)</view>
+<view>您的身体质量指数:{{result}}<text style="color:#66abd6;float:right" >21-22最佳</text></view>
+
+</view>
+</view>
+</view>
+</view>

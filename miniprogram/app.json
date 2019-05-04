@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/add/add",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/statistics/statistics",
+    "pages/tool/tool",
+    "pages/tool/bmi/bmi",
+    "pages/tool/heat/heat",
+    "pages/tool/fcp/fcp"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "text": "主页",
+        "pagePath": "pages/main/main",
+        "iconPath": "images/main1.png",
+        "selectedIconPath": "images/main.png"
+      },
+      {
+        "text": "记录",
+        "pagePath": "pages/add/add",
+        "iconPath": "images/add1.png",
+        "selectedIconPath": "images/add.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/mine1.png",
+        "selectedIconPath": "images/mine.png"
+      }
+    ],
+    "color": "#000",
+    "selectedColor": "#7ac2ba"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "天天膳食",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "nav-bar": "/components/navbar/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

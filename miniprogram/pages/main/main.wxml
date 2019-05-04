@@ -1,0 +1,37 @@
+<!-- 主页 -->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<!-- 详细轮播图 -->
+<swiper indicator-dots="{{true}}" autoplay='{{true}}' style='margin-top:{{height}}px'>
+<swiper-item wx:for="{{mainimgs}}">
+<view class="note-card" bindtap='f1' data-note-id="{{item.id}}">
+<image src='{{item.imagePath}}' style="width: 100vw;"></image> 
+</view>
+</swiper-item>
+</swiper>
+<view class="home-page container">
+<view class="list">
+
+<view class='item'>
+<navigator url="/pages/search/search" open-type="navigate" hover-class='nav-hover'>
+<view  class='icon'><image src='/images/search.png'></image></view>
+<text>搜索</text>
+</navigator>
+</view>
+
+<view class='item'>
+<navigator url="/pages/statistics/statistics" open-type="navigate" hover-class='nav-hover'>
+<view  class='icon'><image src='/images/statistic.png' ></image></view>
+<text>统计</text>
+</navigator>
+</view>
+
+<view class='item'>
+<navigator url="/pages/tool/tool" open-type="navigate" hover-class='nav-hover'>
+<view class='icon'><image src='/images/tool.png'></image></view>
+<text>小工具</text>
+</navigator>
+</view>
+
+</view>
+
+</view>

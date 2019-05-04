@@ -1,0 +1,39 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="container">
+<view class="tool-detail">
+<view class="tool-title"><text>碳水化合物</text></view>
+<text class="tool-info">为人类提供热能的最廉价的营养素</text>
+</view>
+<view class="tool-form">
+<form bindsubmit='submit'>
+<view class="form-item">
+<label class='item-left' >标签上的热量：</label>
+<input class="item-right" name='heat' type='digit' style="width:58%" placeholder='请输入'></input><text>(kj）</text>
+</view>
+<view class="form-item">
+<label class='item-left' >脂肪:</label>
+<input class="item-right" type='digit' name='fat' placeholder='请输入' style="width:58%" ></input>（g）
+</view>
+<view class="form-item">
+<label class='item-left' >碳水化物:</label>
+<input class="item-right" type='digit'  name='carb' placeholder='请输入'style="width:58%" ></input>（g）
+</view>
+<view class="form-item">
+<label class='item-left' >蛋白质:</label>
+<input class="item-right" name='protein' type='digit' placeholder='请输入' style="width:58%" ></input>（g）
+</view>
+<view class="btn-area">
+
+<button formType="reset" hover-class='btn_change'>重置</button>
+<button formType="submit" hover-class='btn_change' >提交</button>
+</view>
+</form>
+<view class="{{show?'result_show':'result_hide'}}">
+<view class="re-title">Result:</view>
+<view class="re-detail">
+<view>实际总碳水化合物</view>
+<view>{{result}}克</view>
+</view>
+</view>
+</view>
+</view>

@@ -1,0 +1,18 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="container">
+<view class="nav-list">
+<navigator class="nav-li" open-type='navigate' url="/pages/tool/bmi/bmi" style="background: #82ba9a;">
+<view class="nav-title">质量指数(BMI)计算器<i class="fa fa-street-view"></i></view>
+
+</navigator>
+<navigator class="nav-li" open-type='navigate' url="/pages/tool/fcp/fcp" style="background: #66abd6;">
+<view class="nav-title">碳水化合物计算器<i class="fa fa-calculator"></i></view>
+
+</navigator>
+<navigator class="nav-li" open-type='navigate' url="/pages/tool/heat/heat" style="background: #7a8ac2;">
+<view class="nav-title">基础热量计算器<i class="fa fa-tint"></i></view>
+
+</navigator>
+
+</view>
+</view>
