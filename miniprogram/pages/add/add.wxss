@@ -1,1 +1,135 @@
 /* pages/add/add.wxss */
+
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.con-top {
+  height: 239rpx;
+  width: 100%;
+  margin: 10rpx;
+}
+
+.con-main {
+  height: 700rpx;
+  width: 650rpx;
+  display: flex;
+  flex-direction: column;
+  border: 0.1rpx dotted rgb(157, 160, 163);
+  border-top-right-radius:40rpx;
+  border-bottom-right-radius: 40rpx;
+}
+
+.nav-top {
+  display: inline-flex;
+  width: 650rpx;
+  height: 50rpx;
+  border-top-right-radius:40rpx;
+ background-color: #6db8af;
+}
+
+.nav-main{
+  display: inline-flex;
+  margin-top:9rpx;
+  flex-direction: column;
+  justify-content: start;
+  height:500rpx;
+}
+.img {
+  height: 45rpx;
+  width: 45rpx;
+  
+}
+
+.img-right {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 220rpx;
+  margin-top: -2rpx;
+}
+.showtime{
+  margin-left: 11rpx;
+  height: 50rpx;
+  width:238rpx;
+  color:white;
+}
+.title {
+  height: 120rpx;
+  color: #8bb9dd;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-bottom-right-radius: 90rpx;
+  border-bottom-left-radius: 45rpx;
+  background-color: white;
+  text-align: center;
+  box-shadow: 20rpx 20rpx 20rpx #8888;
+}
+
+.cloud-1 {
+  width: 173px;
+  height: 53px;
+  margin-left: 14%;
+  color: #8bb9dd;
+  border-bottom-left-radius: 369rpx;
+  border-bottom-right-radius: 165px;
+  background-color: white;
+  line-height: 96rpx;
+  text-align: center;
+  box-shadow: 20rpx 20rpx 20rpx #8888;
+}
+
+.cloud-2 {
+  width: 120px;
+  height: 55px;
+  border-bottom-right-radius: 396px;
+  background-color:white;
+  border-top-right-radius: 200rpx;
+  border-bottom-left-radius: 476rpx;
+  box-shadow: 20rpx 20rpx 20rpx #8888;
+}
+.cloud-box {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.th{
+  width: 40%;
+  justify-content: center;
+  background-color: #6ebece;
+  color:#fff;
+  display: flex;
+  height: 2rem;
+  align-items: center;
+}
+.bg-tr{
+  background: #e6f3f9;
+}
+.tr{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  height: 2rem;
+  align-items: center;
+}
+.td{
+  width:40%;
+  justify-content: center;
+  text-align: center;
+}
+.bg-td{
+  background:snow;
+}
+
+.mark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100rpx;
+}

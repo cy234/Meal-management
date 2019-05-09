@@ -1,3 +1,66 @@
 <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
 <view class="container">
+  <view class="con-top">
+    <view class='title'>
+      <cover-image style='height:84rpx;width:80rpx;margin-left:20rpx;margin:15rpx;' src='../../images/person.png'></cover-image>
+
+      <view style='line-height: 170rpx;'>来记录一下今天的饮食情况吧
+      </view>
+    </view>
+    <view class='cloud-box'>
+      <view class="cloud-1">(*≧▽≦)ツ ~ ┴┴</view>
+      <view class='cloud-2'></view>
+    </view>
+  </view>
+
+  <view class='con-main'>
+    <view class='nav-top'>
+      <cover-image class='img' src='../../images/day.png'></cover-image>
+      <view class='showtime'>{{date}}</view>
+      <cover-image class='img-right' src='../../images/time.png'></cover-image>
+      <view style='width:130rpx;margin-left:15rpx;color:white'>{{time}}</view>
+    </view>
+
+    <view class='nav-main'>
+      <view class='mark'>
+        <cover-image style="width:90rpx;height:90rpx;margin:4rpx" src='../../images/mark.png' bindtap='record'></cover-image>
+      </view>
+      <view class='tr bg-tr'>
+        <view class='th'>食品名称</view>
+        <view class='th'>重量(g)</view>
+        <view class='th'>时间</view>
+      </view>
+
+      <block>
+        <view class='tr bg-td'>
+          <view class='=td'>西兰花</view>
+          <view class='=td'>8</view>
+          <view class='=td'>{{date}}</view>
+        </view>
+        <view class='tr'>
+
+          <view class='=td'>金针菇</view>
+          <view class='=td'>12</view>
+          <view class='=td'>{{date}}</view>
+        </view>
+
+      </block>
+      <block>
+        <view class='tr bg-td'>
+          <view class='=td'>白果</view>
+          <view class='=td'>20</view>
+          <view class='=td'>{{date}}</view>
+        </view>
+        <view class='tr'>
+
+          <view class='=td'>烧鹅</view>
+          <view class='=td'>23</view>
+          <view class='=td'>{{date}}</view>
+        </view>
+
+      </block>
+    </view>
+  </view>
+
+
 </view>
