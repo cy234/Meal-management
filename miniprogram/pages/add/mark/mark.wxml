@@ -1,0 +1,42 @@
+<!--miniprogram/pages/add/mark/mark.wxml-->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+
+<view class='container'>
+  <view class="tool-detail">
+    <view class="tool-title">
+      <text>饮食记录</text>
+    </view>
+    <text class="tool-info"></text>
+  </view>
+  <view class='tool-form'>
+    <form bindsubmit='submit'>
+      <view class="form-item">
+        <label class='item-left'>名称：</label>
+        <input class='item-right' value='{{inputName}}' name='food' placeholder='请输入' bindinput='inputTyping'>请输入</input>
+        <view wx:if='{{inputName.length>0}}' bindtap='clearInput'>
+          <icon type='clear' size='14'></icon>
+        </view>
+      </view>
+
+      <view class='items' wx:if='{{inputName.length>0}}' hidden='{{viewShowed}}'>
+        <view wx:for='{{foodList}}' wx:key='key'>
+          <view class='item-box' bindtap='food_name' data-index='{{index}}' data-name='{{item.name}}' data-id='{{item.id}}'>
+            <label>{{item.name}}</label>
+            
+          </view>
+        </view>
+      </view>
+      <view class="form-item">
+        <label class='item-left'>重量：</label>
+        <input class='item-right' value='{{inputWeight}}' name='weight' placeholder='请输入' style="width:58%" type='digit'>请输入</input>
+        (g)
+      </view>
+
+      <view class='btn-area'>
+        <button form-type='reset' hover-class='btn-change'>重置</button>
+        <button form-type='submit' hover-class='btn-change'>提交</button>
+      </view>
+    </form>
+  </view>
+
+</view>

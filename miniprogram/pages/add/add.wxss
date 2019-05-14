@@ -129,7 +129,7 @@ page {
 
 .mark{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: flex-start;
   height:100rpx;
 }
