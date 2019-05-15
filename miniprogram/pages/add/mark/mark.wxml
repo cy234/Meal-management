@@ -36,7 +36,9 @@
         <button form-type='reset' hover-class='btn-change'>重置</button>
         <button form-type='submit' hover-class='btn-change'>提交</button>
       </view>
+    
     </form>
+    
   </view>
 
 </view>

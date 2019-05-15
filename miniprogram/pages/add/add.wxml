@@ -16,39 +16,47 @@
   <view class='con-main'>
     <view class='nav-top'>
       <cover-image class='img' src='../../images/day.png'></cover-image>
-      <view class='showtime'>{{date}}</view>
+      <view class='showtime'>{{nowdate}}</view>
       <cover-image class='img-right' src='../../images/time.png'></cover-image>
-      <view style='width:130rpx;margin-left:15rpx;color:white'>{{time}}</view>
+      <view style='width:130rpx;margin-left:15rpx;color:white;height:50rpx;line-height:50rpx;'>{{time}}</view>
     </view>
 
     <view class='nav-main'>
-      <navigator open-type='navigate' url="/pages/add/mark/mark">
+
       <view class='mark'>
-        <cover-image style="width:80rpx;height:80rpx;margin:4rpx" src='../../images/mark.png'></cover-image>
-        <text style='margin-top:10rpx;margin-left:10rpx;color:gray;'>点击开始记录</text>
-      </view>
-      </navigator>
-      <view class='tr bg-tr'>
-        <view class='th'>食品名称</view>
-        <view class='th'>重量(g)</view>
-        <view class='th'>时间</view>
-      </view>
+        <button class='btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+          <cover-image style="width:80rpx;height:80rpx;margin:4rpx" src='../../images/mark.png'></cover-image>
+          <text style='margin-top:10rpx;margin-left:10rpx;color:gray;'>点击开始记录</text>
+        </button>
 
-      <block>
-        <view class='tr bg-td'>
-          <view class='=td'></view>
-          <view class='=td'></view>
-          <view class='=td'></view>
-        </view>
-        <view class='tr'>
+        <button wx:else class='btn' open-type='navigate' bindtap='bindViewTap'>
+          <cover-image style="width:80rpx;height:80rpx;margin:4rpx" src='../../images/mark.png'></cover-image>
+          <text style='margin-top:10rpx;margin-left:10rpx;color:gray;'>点击开始记录</text>
+        </button>
 
-          <view class='=td'>金针菇</view>
-          <view class='=td'>12</view>
-          <view class='=td'></view>
+      </view>
+      <view class='itemlist'>
+        <view class='tr bg-tr'>
+          <view class='th'>食品名称</view>
+          <view class='th'>重量(g)</view>
+          <view class='th'>时间</view>
         </view>
 
-      </block>
-      
+        <view wx:for='{{foodList}}' wx:key='{{_id}}' wx:if='{{index<=6}}'>
+          <view class='tr bg-td' wx:if='{{index % 2 == 0}}'>
+            <view class='=td'>{{item.name}}</view>
+            <view class='=td'>{{item.weight}}</view>
+            <view class='=td'>{{item.date}}</view>
+          </view>
+          <view class='tr' wx:else>
+
+            <view class='=td'>{{item.name}}</view>
+            <view class='=td'>{{item.weight}}</view>
+            <view class='=td'>{{item.date}}</view>
+          </view>
+
+        </view>
+      </view>
     </view>
   </view>
 

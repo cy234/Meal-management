@@ -17,18 +17,19 @@ page {
 }
 
 .con-main {
-  height: 700rpx;
-  width: 650rpx;
+  height: 800rpx;
+  width:700rpx;
   display: flex;
   flex-direction: column;
   border: 0.1rpx dotted rgb(157, 160, 163);
   border-top-right-radius:40rpx;
   border-bottom-right-radius: 40rpx;
+  margin-top:76rpx;
 }
 
 .nav-top {
   display: inline-flex;
-  width: 650rpx;
+  width: 700rpx;
   height: 50rpx;
   border-top-right-radius:40rpx;
  background-color: #6db8af;
@@ -39,7 +40,7 @@ page {
   margin-top:9rpx;
   flex-direction: column;
   justify-content: start;
-  height:500rpx;
+  height:750rpx;
 }
 .img {
   height: 45rpx;
@@ -58,6 +59,7 @@ page {
   height: 50rpx;
   width:238rpx;
   color:white;
+  line-height:50rpx; 
 }
 .title {
   height: 120rpx;
@@ -131,5 +133,21 @@ page {
   display: flex;
   justify-content: start;
   align-items: flex-start;
+  
+}
+.btn{
+  display: inline-flex;
+  justify-content: start;
+  align-items: flex-start;
   height:100rpx;
+  width:100%;
+  background-color:snow;
+}
+.button-hover{
+  background-color: snow;
+}
+.itemlist{
+  width:100%;
+  margin-top:3rem;
+  
 }

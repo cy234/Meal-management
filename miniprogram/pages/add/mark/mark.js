@@ -2,7 +2,8 @@
 
 var util = require('../../../utils/util.js');
 const app = getApp();
-var foodid = ''
+var foodid = '';
+var openid=''
 Page({
 
   /**
@@ -18,6 +19,8 @@ Page({
     inputShowed: true,
     //显示结果view的状态
     viewShowed: false,
+    //显示警告窗口的状态
+    warnShowed:true,
     // 搜索框值
     inputName: "",
     //搜索渲染推荐数据
@@ -34,7 +37,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    if (app.globalData.openid) {
+      this.setData({
+        openid: app.globalData.openid
+      })
+    }
   },
 
   /**
@@ -169,19 +176,37 @@ Page({
     wx.cloud.init();
     const db = wx.cloud.database();
     console.log('food' + foodid);
-
-    db.collection('user_meal').add({
-      data: {
-        date: d,
-        id: foodid,
-        uid: '1', //需获取openid
-        weight: w
-      },
-      success(res) {
-        console.log(res)
-      }
-
-    })
-
+    if (d != '' && foodid != '' && w != '') {
+      db.collection('user_meal').add({
+        data: {
+          date: d,
+          id: foodid,
+          uid: '1', //需获取openid
+          weight: w,
+          name:f
+        },
+        success(res) {
+          console.log(res),
+            wx.showToast({
+              title: '添加成功',
+              icon: 'success',
+              duration: 2000
+            })
+        },
+        fail(res){
+          wx.showToast({
+            title: '添加失败',
+            icon:'none'
+          })
+        }
+      })
+    }
+    else{
+      wx.showToast({
+        title: '添加失败',
+        duration:2000,
+        image:'/images/warn.png'
+      })
+    }
   }
 })
