@@ -2,7 +2,6 @@
 var util = require('../../utils/util.js');
 const app = getApp();
 var openid=""
-
 Page({
 
   /**

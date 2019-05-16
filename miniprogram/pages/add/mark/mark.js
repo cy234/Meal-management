@@ -28,7 +28,6 @@ Page({
     //日期
     date: "",
     foodname: "",
-
     list: [],
     weight: ""
   },
@@ -102,7 +101,7 @@ Page({
   //键盘抬起事件
   inputTyping: function(e) {
     console.log(e.detail.value)
-    console.log(e.detail.value.length);
+    
     var that = this;
     if (e.detail.value == '') {
       return;
@@ -135,7 +134,6 @@ Page({
   clearInput: function() {
     this.setData({
       inputName: ""
-      // viewShowed:false
     });
   },
 
@@ -156,7 +154,7 @@ Page({
 
   },
 
-  //存进数据库(failed)
+  //存进数据库
   submit: function(e) {
     console.log(e.detail.value);
 
@@ -164,7 +162,6 @@ Page({
     var w = e.detail.value.weight;
     var f = e.detail.value.food;
     var d = util.formatTime2(new Date());
-
     if (e.detail.value == '') {
       return;
     }
@@ -205,7 +202,7 @@ Page({
       wx.showToast({
         title: '添加失败',
         duration:2000,
-        image:'/images/warn.png'
+        image:'/images/warns.png'
       })
     }
   }

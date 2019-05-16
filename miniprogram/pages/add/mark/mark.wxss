@@ -5,7 +5,6 @@
   align-items: initial;
   font-size: 30rpx;
 }
-
 navigator {
   height: 100rpx;
   display: block;

@@ -1,6 +1,5 @@
 <!--miniprogram/pages/add/mark/mark.wxml-->
 <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
-
 <view class='container'>
   <view class="tool-detail">
     <view class="tool-title">
