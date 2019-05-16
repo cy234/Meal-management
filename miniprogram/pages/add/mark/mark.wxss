@@ -10,7 +10,6 @@ navigator {
   display: block;
   color: white;
 }
-
 .nav-list {
   width: 100%;
   margin-top: 100rpx;

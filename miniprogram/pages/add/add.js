@@ -3,7 +3,6 @@ var util = require('../../utils/util.js');
 const app = getApp();
 var openid=""
 Page({
-
   /**
    * 页面的初始数据
    */

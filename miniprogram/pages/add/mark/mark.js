@@ -5,7 +5,6 @@ const app = getApp();
 var foodid = '';
 var openid=''
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -202,7 +201,7 @@ Page({
       wx.showToast({
         title: '添加失败',
         duration:2000,
-        image:'/images/warns.png'
+        image:'/images/warn.png'
       })
     }
   }

@@ -1,8 +1,9 @@
 <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+
 <view class="container">
   <view class="con-top">
     <view class='title'>
-      <cover-image style='height:84rpx;width:80rpx;margin-left:20rpx;margin:15rpx;' src='../../images/person1.png'></cover-image>
+      <cover-image style='height:84rpx;width:80rpx;margin-left:20rpx;margin:15rpx;' src='../../images/person.png'></cover-image>
       <view style='line-height: 170rpx;'>来记录一下今天的饮食情况吧
       </view>
     </view>
@@ -13,9 +14,9 @@
   </view>
   <view class='con-main'>
     <view class='nav-top'>
-      <cover-image class='img' src='../../images/date.png'></cover-image>
+      <cover-image class='img' src='../../images/day.png'></cover-image>
       <view class='showtime'>{{nowdate}}</view>
-      <cover-image class='img-right' src='../../images/times.png'></cover-image>
+      <cover-image class='img-right' src='../../images/time.png'></cover-image>
       <view style='width:130rpx;margin-left:15rpx;color:white;height:50rpx;line-height:50rpx;'>{{time}}</view>
     </view>
     <view class='nav-main'>
@@ -25,7 +26,7 @@
           <text style='margin-top:10rpx;margin-left:10rpx;color:gray;'>点击开始记录</text>
         </button>
         <button wx:else class='btn' open-type='navigate' bindtap='bindViewTap'>
-          <cover-image style="width:80rpx;height:80rpx;margin:4rpx" src='../../images/markup.png'></cover-image>
+          <cover-image style="width:80rpx;height:80rpx;margin:4rpx" src='../../images/mark.png'></cover-image>
           <text style='margin-top:10rpx;margin-left:10rpx;color:gray;'>点击开始记录</text>
         </button>
       </view>
