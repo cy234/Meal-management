@@ -1,0 +1,53 @@
+.switch-type {
+  margin-top: 8%;
+  display: flex;
+}
+.switch-type .btn:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.switch-type .btn:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.switch-type .btn {
+  background: #dfdfdf;
+  padding: 10rpx 40rpx;
+}
+.switch-type .btn.active {
+  border: 2rpx solid #7ac2ba;
+  background: #008b8b;
+  color: #fff;
+}
+.pickershow{
+  display: block;
+  
+}
+.pickerhide{
+  display: none;
+}
+.fa {
+  margin-right: 20rpx;
+}
+.container1,.container2{
+  position: absolute;
+  top:20%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.container1{
+  top: 25%;
+}
+
+ec-canvas{
+  width: 100%;
+ height: 80%;
+ 
+}

@@ -7,9 +7,11 @@ Page({
   data: {
     nvabarData: {
       showCapsule: 0, //1表示显示图标
-      title: '天天膳食'
+      title: '天天膳食',
+     
     },
     height: app.globalData.height * 2 + 20,
+   
     mainimgs:[
       { imagePath: '/images/use.jpg' ,id:1}
     ]
