@@ -1,0 +1,90 @@
+/* miniprogram/pages/search/detail/detail.wxss */
+
+page {
+  background: #fffafa;
+}
+
+.home-page {
+  width: 90%;
+  background: #fff;
+  margin: 300rpx auto !important;
+  box-shadow: 0 0 20px #b1b1b1;
+}
+
+.searchbar-result {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.searchbar-result:before {
+  display: none;
+}
+
+.weui-cell {
+  padding: 12px 15px 12px 35px;
+}
+
+.title {
+  color: #09c;
+  border-bottom: 2rpx solid #09c;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 35rpx;
+  font-weight: 900;
+  margin-bottom: 30rpx;
+}
+
+.table {
+  border: 1px solid #ddd;
+  border-right: 0;
+  border-bottom: 0;
+  width: 100%;
+  margin-left: 1%;
+}
+
+.t_header {
+  display: flex;
+  justify-content: space-between;
+  background: #7ac2ba;
+  width: 100%;
+  font-size: 36rpx;
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+}
+
+.th {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80rpx;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.th1, .th2, .td1, .td2 {
+  width: 35%;
+}
+
+.th3, .td3 {
+  width: 30%;
+}
+
+.table_cell {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 25rpx;
+  color: #666;
+  text-align: center;
+}
+
+.td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60rpx;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}

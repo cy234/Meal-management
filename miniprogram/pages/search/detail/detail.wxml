@@ -1,0 +1,24 @@
+<!--miniprogram/pages/search/detail/detail.wxml-->
+<!-- <text>miniprogram/pages/search/detail/detail.wxml</text> -->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="home-page" style='margin-top:{{height}}px'>
+  <block>
+    <view class='title'>{{inputVal}}</view>
+    <view class="table">
+      <view class="t_header">
+        <view class="th th1">营养素</view>
+        <view class="th th2">含量(每100g)</view>
+        <view class="th th3">NRV%</view>
+      </view>
+      <block wx:for="{{listData}}" wx:for-item="nutrient" wx:key="key">
+        <view class="table_cell">
+          <view class="td td1">{{nutrient.name}}</view>
+          <view class="td td2">{{nutrient.weight}}</view>
+          <view class="td td3">
+            <view class="targe">{{nutrient.level}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </block>
+</view>

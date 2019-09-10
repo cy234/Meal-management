@@ -1,0 +1,57 @@
+.article{
+width: 98%;
+background: #fff;
+margin: 0 auto;
+}
+.art_title{
+  display: block;
+  width: 100%;
+  margin: 30rpx auto;
+  font-size: 35rpx;
+  margin-top:150rpx;
+  text-align: center;
+}
+.table {
+  width: 90%;
+  margin: 0 auto;
+  border: 0px solid darkgray;
+  
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 1.3rem;
+  align-items: center;
+}
+.td {
+    width:70%;
+    justify-content: center;
+    text-align: center;
+}
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: #E6F3F9;
+}
+.th {
+  width: 70%;
+  justify-content: center;
+  background: #616161;
+  color: #fff;
+  display: flex;
+  height: 1.3rem;
+  align-items: center;
+}
+.kd{
+  width: 30%;
+}
+.note{
+  width: 90%;
+  margin: 100rpx auto;
+
+}
+.note_detail{
+  font-size: 33rpx;
+}

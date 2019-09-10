@@ -9,7 +9,10 @@
     "pages/tool/bmi/bmi",
     "pages/tool/heat/heat",
     "pages/tool/fcp/fcp",
-    "pages/add/mark/mark"
+    "pages/add/mark/mark",
+    "pages/search/category/category",
+    "pages/search/detail/detail",
+    "pages/mine/reference/reference"
   ],
   "tabBar": {
     "list": [

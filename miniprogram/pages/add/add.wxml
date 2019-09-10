@@ -1,53 +1,50 @@
 <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
 
 <view class="container">
-  <view class="con-top">
-    <view class='title'>
-      <cover-image style='height:84rpx;width:80rpx;margin-left:20rpx;margin:15rpx;' src='../../images/person.png'></cover-image>
-      <view style='line-height: 170rpx;'>来记录一下今天的饮食情况吧
-      </view>
-    </view>
-    <view class='cloud-box'>
-      <view class="cloud-1">(*≧▽≦)ツ ~ ┴┴</view>
-      <view class='cloud-2'></view>
-    </view>
-  </view>
+  <!--  -->
   <view class='con-main'>
-    <view class='nav-top'>
-      <cover-image class='img' src='../../images/day.png'></cover-image>
-      <view class='showtime'>{{nowdate}}</view>
-      <cover-image class='img-right' src='../../images/time.png'></cover-image>
-      <view style='width:130rpx;margin-left:15rpx;color:white;height:50rpx;line-height:50rpx;'>{{time}}</view>
-    </view>
-    <view class='nav-main'>
-      <view class='mark'>
-        <button class='btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
-          <cover-image style="width:80rpx;height:80rpx;margin:4rpx" src='../../images/mark.png'></cover-image>
-          <text style='margin-top:10rpx;margin-left:10rpx;color:gray;'>点击开始记录</text>
-        </button>
-        <button wx:else class='btn' open-type='navigate' bindtap='bindViewTap'>
-          <cover-image style="width:80rpx;height:80rpx;margin:4rpx" src='../../images/mark.png'></cover-image>
-          <text style='margin-top:10rpx;margin-left:10rpx;color:gray;'>点击开始记录</text>
-        </button>
+    <view class='mark'>
+
+
+      <view class='nav-top'>
+        <cover-image class='img' src='../../images/day.png'></cover-image>
+        <view class='showtime'>{{nowdate}}</view>
+        <cover-image class='img-right' src='../../images/time.png'></cover-image>
+        <view style='width:130rpx;color:white;height:50rpx;line-height:72rpx;margin-left:11rpx;'>{{time}}</view>
       </view>
-      <view class='itemlist'>
+
+      <button class='btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <cover-image class='btnimg' src='../../images/mark.png'></cover-image>
+        <text class='btntext'>点击开始记录</text>
+      </button>
+      <button wx:else class='btn' open-type='navigate' bindtap='bindViewTap'>
+        <cover-image class="btnimg" src='../../images/mark.png'></cover-image>
+        <text class='btntext'>点击开始记录</text>
+      </button>
+    </view>
+
+    <view class='nav-main'>
+      <view class='itemlist' wx:if="{{foodList!='' &&  hasUserInfo}}">
         <view class='tr bg-tr'>
-          <view class='th'>食品名称</view>
-          <view class='th'>重量(g)</view>
-          <view class='th'>时间</view>
+          <view class='th' style='width:60%;'>食品名称</view>
+          <view class='th' style='width:40%;'>重量(g)</view>
+
         </view>
-        <view wx:for='{{foodList}}' wx:key='{{_id}}' wx:if='{{index<=6}}'>
+        <view wx:for='{{foodList}}' wx:key='{{_id}}' wx:if='{{index<=5}}'>
           <view class='tr bg-td' wx:if='{{index % 2 == 0}}'>
-            <view class='=td'>{{item.name}}</view>
-            <view class='=td'>{{item.weight}}</view>
-            <view class='=td'>{{item.date}}</view>
+            <view class='=td' style='width:60%;font-size:34rpx;'>{{item.name}}</view>
+            <view class='=td' style='text-align:center;width:40%;'>{{item.weight}}</view>
+
           </view>
           <view class='tr' wx:else>
-            <view class='=td'>{{item.name}}</view>
-            <view class='=td'>{{item.weight}}</view>
-            <view class='=td'>{{item.date}}</view>
+            <view class='=td' style='width:60%;font-size:34rpx;'>{{item.name}}</view>
+            <view class='=td' style='text-align:center;width:40%;'>{{item.weight}}</view>
+
           </view>
         </view>
+      </view>
+      <view class='showinfo' wx:else>
+        <text>今天还没有记录哦^_^</text>
       </view>
     </view>
   </view>

@@ -1,3 +1,63 @@
 <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
-<view class="container">
+
+<view  class="container">
+<view wx:if="{{condition}}" class="beforeCharts">
+<view class="beforeinput">
+<view class="form_hd">
+<text class="tips">统计前请填写真实信息\n</text>
+<text class="tip_detail">我们将据此提供准确的推荐摄入值\n</text>
 </view>
+<form  bindsubmit='submit'>
+<view class="section">
+<view class='section_title'>年龄</view>
+<input name="age" type="number" placeholder="请输入您的年龄" auto-focus/>
+</view>
+
+<view cass="section section_gap">
+<view class='section_title'>性别</view>
+<radio-group name="gender">
+<label><radio value="0"/>女</label>
+<label><radio value="1"/>男</label>
+</radio-group>
+
+</view>
+<view class="btn-area">
+<button formType="submit">提交</button>
+</view>
+
+</form>
+
+
+</view>
+</view>
+<view  wx:else class="afterinput">
+<view class="switch-type">
+<view class="btn {{currentSelectedType=='week'?'active':''}}" bindtap='selectedWeek' data-id='week'>当周
+</view>
+<view class="btn {{currentSelectedType=='month'?'active':''}}" bindtap='selectedMonth' data-id='month'>按月</view>
+</view>
+<view class="detail">
+
+<view class="{{currentSelectedType=='month'?'pickershow':'pickerhide'}}">
+
+<picker value="{{monthdate}}" fields="month" mode="date" start="2015-09" end="{{time}}" bindchange='bindDateChange'><view class="picker">
+<i class="fa fa-cog"></i>
+<text>选择月份：{{monthDate}}</text>
+</view></picker>
+
+</view >
+<view class="charts">
+
+<view class="container1">
+<text>按营养素类别统计</text>
+ <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="container2">
+<text>按食品类别统计</text>
+ <ec-canvas id="mychart-dom-graph" canvas-id="mychart-graph" ec="{{ ec1 }}"></ec-canvas>
+ 
+</view>
+</view>
+</view>
+</view>
+</view> 

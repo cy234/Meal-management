@@ -1,6 +1,7 @@
 <!-- 主页 -->
 <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
 <!-- 详细轮播图 -->
+<view class="app">
 <swiper indicator-dots="{{true}}" autoplay='{{true}}' style='margin-top:{{height}}px'>
 <swiper-item wx:for="{{mainimgs}}">
 <view class="note-card" bindtap='f1' data-note-id="{{item.id}}">
@@ -9,29 +10,29 @@
 </swiper-item>
 </swiper>
 <view class="home-page container">
-<view class="list">
+<view class="bar">
 
-<view class='item'>
 <navigator url="/pages/search/search" open-type="navigate" hover-class='nav-hover'>
-<view  class='icon'><image src='/images/search.png'></image></view>
-<text>搜索</text>
+<i class="fa fa-search"></i>
+<text>\t\t\t食品营养素查询</text>
 </navigator>
 </view>
 
+<view class="list" style="margin-top: 100rpx;">
 <view class='item'>
 <navigator url="/pages/statistics/statistics" open-type="navigate" hover-class='nav-hover'>
-<view  class='icon'><image src='/images/statistic.png' ></image></view>
+<view  class='icon icon1'><image src='/images/statistic.png' ></image></view>
 <text>统计</text>
 </navigator>
 </view>
 
 <view class='item'>
 <navigator url="/pages/tool/tool" open-type="navigate" hover-class='nav-hover'>
-<view class='icon'><image src='/images/tool.png'></image></view>
+<view class='icon icon2'><image src='/images/tool.png'></image></view>
 <text>小工具</text>
 </navigator>
 </view>
-
 </view>
 
+</view>
 </view>

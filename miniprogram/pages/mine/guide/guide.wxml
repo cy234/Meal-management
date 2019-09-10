@@ -1,0 +1,85 @@
+<nav-bar navbar-data='{{nvabarData}}'>
+</nav-bar>
+<scroll-view scroll-y='true'>
+  <view class='container'>
+
+    <view class='head'>
+      <text class='h'>"天天膳食"使用帮助</text>
+    </view>
+
+    <view class='main'>
+
+      <view>
+        <text class='p'>"天天膳食"专注于您的日常膳食管理，帮助您分析营养均衡的膳食搭配，可视化分析您的膳食习惯。</text>
+      </view>
+
+      <view class='part'>
+        <text class='h'>搜索</text>
+        <text class='step'>点击 首页 -> 搜索，可以搜索食品的详细信息</text>
+       <view style='position:relative'>
+        <image class='img' src='/images/img1.png'></image></view>
+        <text class='p'>搜索需要按以下步骤进行：</text>
+        <text class='step'>分类搜索：点击食品分类 -> 选择食品查看详情。</text>
+        <text class='step'>详细搜索：点击搜索框 -> 输入食品 ->选择食品查看详情。</text>
+      </view>
+
+      <view class='part'>
+        <text class='h'>统计</text>
+        <text class='step'>点击 首页 -> 统计，查看统计信息。</text>
+        <view style='position:relative;'>
+        <image class='img' style='height:290rpx;' src='/images/img2.png'></image></view>
+        <text class='p'>统计分为按周/按月显示根据营养素类别统计和食品类别统计的信息。</text>
+       <view style='position:relative'> <image class='img' style='height:290rpx;' src='/images/img3.png'></image></view>
+        <text class='p'>按营养素类别统计：根据您的记录情况展示本周（本月）营养素的实际摄入量和推荐摄入量的折线图。</text>
+        <text class='p'>按食品类别统计：根据您的记录情况展示本周（本月）食品类别的实际摄入量和推荐摄入量的网状图。</text>
+      </view>
+
+      <view class='part'>
+        <text class='h'>小工具</text>
+        <text class='step'>点击 首页 -> 小工具，使用关于食品计算的小工具。</text>
+       <view style='position:relative'> <image class='img' style='height:290rpx;' src='/images/img2.png'></image></view>
+        <text class='p'>小工具包括 质量指数(BMI)计算器、碳水化合物计算器和基础热量计算器。</text>
+       <view style='position:relative'> <image class='img' src='/images/img4.png'></image></view>
+        <text class='step'>质量指数(BMI)计算器：</text>
+        <view style='position:relative'><image class='img' src='/images/img5.png'></image></view>
+        <text class='p'>质量指数是衡量是否肥胖和标准体重的重要指标。提供这个小工具方便您快速了解自己的质量指数来均衡膳食，保持良好的体型和良好的饮食。</text>
+
+        <text class='step'>碳水化合物计算器：</text>
+        <view style='position:relative'><image class='img' src='/images/img6.png'></image></view>
+        <text class='p'>碳水化合物是为人类提供热能的最廉价的营养素。碳水化合物计算器是计算食品中的实际总碳水化合物含量，方便您了解日常生活中的食品包含的碳水化合物，根据实际情况调整膳食。</text>
+
+        <text class='step'>基础热量计算器：</text>
+        <view style='position:relative'><image class='img' src='/images/img7.png'></image></view>
+        <text class='p'>基础热量是人体基础代谢需要的基本能量。基础热量计算器能让您清楚自己每天应该摄入多少热量，自己的身体需要多少热量，同时可以作为调整饮食计划的一个参考，协助您保持良好的身体素质。</text>
+      </view>
+      
+      <view class='part'>
+      <text class='h'>记录</text>
+      <view style='position:relative'><image class='img' style='height:290rpx;' src='/images/img8.png'></image></view>
+      <text class='p'>记录需要按以下步骤进行：</text>
+      <text class='step'>点击添加记录按钮进行授权登录小程序，授权登录成功后即可添加饮食记录。</text>
+      <text class='p'>添加饮食记录时，在输入框输入食品名称，选择列表中合适的食品，并记录食品大概的摄入量，方便统计。您可以添加多条信息，添加完成后返回记录页面查看当天的记录情况。</text>
+      <view style='position:relative'> <image class='img' src='/images/img9.png'></image></view>
+      </view>
+
+      <view class='part'>
+      <text class='h'>我的</text>
+      <view style='position:relative'><image class='img' src='/images/img9.png'></image></view>
+      <text class='p'>我的 页面主要展示您个人信息（使用者头像、使用者昵称）、登录天数
+      、记录天数，包括反馈与建议、营养参考、使用手册功能模块。</text>
+
+      <text class='step'>反馈与建议</text>
+      <text class='p'>您可以反馈使用小程序过程遇到的问题或者向我们提出更好的建议。</text>
+
+      <text class='step'>营养参考</text>
+      <text class='p'>您可以查看我们提供的食品的营养素参考值，作为选择食品时的一种营养参考照尺度。</text>
+
+      <text class='step'>使用帮助</text>
+      <text class='p'>您可以查看"天天膳食"小程序的使用手册。</text>
+
+      </view>
+      
+    </view>
+
+  </view>
+</scroll-view>

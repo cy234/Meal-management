@@ -10,7 +10,11 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+     //创建云开发环境
+     wx.cloud.init({
+       env:'meals',
+       traceUser:true
+     })
     //获取顶部窗口高度
     wx.getSystemInfo({
       success:(res)=> {

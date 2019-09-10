@@ -2,6 +2,17 @@
 
 <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
 <view class='container'>
+<view class="con-top">
+    <view class='title'>
+      
+      <view style='line-height: 170rpx;'>来记录一下今天的饮食情况吧
+      </view>
+    </view>
+    <view class='cloud-box'>
+      <view class="cloud-1">(*≧▽≦)ツ ~ ┴┴</view>
+      <view class='cloud-2'></view>
+    </view>
+  </view>
   <view class="tool-detail">
     <view class="tool-title">
       <text>饮食记录</text>
@@ -29,7 +40,7 @@
       <view class="form-item">
         <label class='item-left'>重量：</label>
         <input class='item-right' value='{{inputWeight}}' name='weight' placeholder='请输入' style="width:58%" type='digit'>请输入</input>
-        (g)
+        (g/ml)
       </view>
 
       <view class='btn-area'>

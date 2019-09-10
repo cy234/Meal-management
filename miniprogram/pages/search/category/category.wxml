@@ -1,0 +1,13 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view>
+
+</view>
+<view class="others">
+  <block wx:for="{{array}}">
+    <button class="button" bindtap='goo' id="{{item.Name}}">{{item.Name}}
+      <view class="arrow">
+        <i class="fa fa-angle-right"></i>
+      </view>
+    </button>
+  </block>
+</view>

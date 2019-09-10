@@ -1,0 +1,38 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="container">
+  <view class="article">
+    <text class="art_title"> 中国居民平衡膳食宝塔（2016）年数据绘表:</text>
+    <view class="table">
+
+      <view class="tr bg-w">
+        <view class="th kd">食品种类</view>
+        <view class="th">每日推荐摄入量(/d)</view>
+      </view>
+
+      <block wx:for="{{listData}}" wx:key="{{code}}">
+        <view class="tr bg-g" wx:if="{{index%2==0}}">
+          <view class="td kd">{{item.kind}}</view>
+          <view class="td">{{item.weight}}</view>
+        </view>
+
+        <view class="tr" wx:else>
+          <view class="td kd">{{item.kind}}</view>
+          <view class="td">{{item.weight}}</view>
+        </view>
+
+      </block>
+
+
+
+    </view>
+
+    
+    <view class="note">
+    <text class="note_title">注：\n</text>
+    <text class="note_detail">
+    本小程序数据参照国家卫生健康委员会关于发布《中国居民膳食营养素参考摄入量》卫生行业标准的通告国卫通〔2018〕6号，并以RNI（推荐摄入值）为主
+    </text>
+
+    </view>
+  </view>
+</view>

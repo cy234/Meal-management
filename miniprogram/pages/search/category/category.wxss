@@ -1,0 +1,18 @@
+/* miniprogram/pages/search/category/category.wxss */
+
+.arrow {
+  float: right;
+}
+
+button {
+  width: 100%;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  color: #666 !important;
+  text-align: left;
+}
+
+.others {
+  margin-top: 160rpx;
+}

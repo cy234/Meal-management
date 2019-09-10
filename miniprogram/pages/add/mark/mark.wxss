@@ -5,6 +5,53 @@
   align-items: initial;
   font-size: 30rpx;
 }
+
+.con-top {
+  height: 239rpx;
+  width: 100%;
+  margin: 10rpx;
+}
+
+.cloud-1 {
+  width: 173px;
+  height: 53px;
+  margin-left: 14%;
+  color: #8bb9dd;
+  border-bottom-left-radius: 369rpx;
+  border-bottom-right-radius: 165px;
+  background-color: white;
+  line-height: 96rpx;
+  text-align: center;
+  box-shadow: 20rpx 20rpx 20rpx #8888;
+}
+
+.cloud-2 {
+  width: 120px;
+  height: 55px;
+  border-bottom-right-radius: 396px;
+  background-color:white;
+  border-top-right-radius: 200rpx;
+  border-bottom-left-radius: 476rpx;
+  box-shadow: 20rpx 20rpx 20rpx #8888;
+}
+.cloud-box {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.title {
+  height: 120rpx;
+  color: #7ac2ba;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-bottom-right-radius: 90rpx;
+  border-bottom-left-radius: 45rpx;
+  background-color: white;
+  text-align: center;
+  box-shadow: 20rpx 20rpx 20rpx #8888;
+}
+
 navigator {
   height: 100rpx;
   display: block;

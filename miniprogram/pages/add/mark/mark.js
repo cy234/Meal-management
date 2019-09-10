@@ -28,7 +28,8 @@ Page({
     date: "",
     foodname: "",
     list: [],
-    weight: ""
+    weight: "",
+    isSubmit:false
   },
 
   /**
@@ -147,9 +148,8 @@ Page({
       viewShowed: true,
       inputName: res.currentTarget.dataset.name,
       foodid: res.currentTarget.dataset.id
-    });
-    wx.cloud.init();
-    const db = wx.cloud.database()
+    })
+    
 
   },
 

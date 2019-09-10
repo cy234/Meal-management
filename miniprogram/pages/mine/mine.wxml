@@ -1,3 +1,45 @@
 <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
 <view class="container">
+
+  <view class="userinfo"  wx:if="{{hasUserInfo }}">
+    <view class="userinfo-avatar  ">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <open-data class="userisnfo-nickname" type="userNickName"></open-data>
+  </view>
+
+  <view  wx:if="{{!hasLogin&&!hasUserInfo && canIUse}}">
+  <button class='btn' wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" >点击登录</button>
+  </view>
+
+</view>
+<view class="mineDetail"  wx:if="{{hasUserInfo }}">
+
+  <view>Day
+    <text>{{day}}</text>
+  </view>
+  <view>Record
+    <text>{{num}}</text>
+  </view>
+</view>
+<!-- 详细 -->
+<view class="others">
+  <block>
+    <button class="button" open-type="feedback">反馈与建议
+      <view class="arrow">
+        <i class="fa fa-angle-right"></i>
+      </view>
+    </button>
+    <button class="button" bindtap='reference'>营养参考
+      <view class="arrow">
+        <i class="fa fa-angle-right"></i>
+      </view>
+    </button>
+    <button class="button" bindtap='toGuide'>使用手册
+      <view class="arrow">
+        <i class="fa fa-angle-right"></i>
+      </view>
+    </button>
+
+  </block>
 </view>

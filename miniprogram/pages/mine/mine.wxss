@@ -1,0 +1,80 @@
+
+.container{
+  width: 100%;
+  background: #7ac2ba;
+  margin: 30rpx auto;
+  color: #fff;
+}
+.btn{
+  margin-top: 100rpx;
+  border-radius: 20rpx;
+}
+.userinfo {
+  position: relative;  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+}
+.mineDetail{
+  width: 90%;
+  background: #fff;
+  margin: -100rpx auto;
+  border-radius:10rpx;
+ box-shadow:0 0 20px #ddd;
+ color: #666;
+
+}
+
+.userinfo-avatar {
+  overflow:hidden;  
+  display: block;  
+  width: 160rpx;  
+  height: 160rpx;  
+  margin: 20rpx;  
+  margin-top: 50rpx;  
+  border-radius: 50%;  
+  border: 2px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.userinfo-age{
+  color:aqua;
+}
+.arrow{
+float:right;
+}
+.list{
+ width: 90%;
+ margin: 40rpx auto;
+  font-size: 40rpx;
+}
+.mineDetail view{height: 140rpx;line-height: 140rpx;text-align: center;}
+.mineDetail view:nth-of-type(1){
+  float:left;
+  width: 50%;
+  margin: 0 auto;
+  
+}
+
+.mineDetail text{color: #08abab;padding: 20rpx;font-size: 50rpx;}
+button{
+  width: 100%;
+  background: #fff;
+  border:none;
+  border-radius: 0;
+  color: #666 !important;
+  text-align: left;
+}
+.others{
+  margin-top: 160rpx;
+}
+

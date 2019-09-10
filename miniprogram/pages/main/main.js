@@ -11,7 +11,9 @@ Page({
     },
     height: app.globalData.height * 2 + 20,
     mainimgs:[
-      { imagePath: '/images/use.jpg' ,id:1}
+      { imagePath: '/images/use.jpg' ,id:1},
+      { imagePath: '/images/use1.jpg', id: 2 },
+      { imagePath: '/images/use2.jpg', id: 3 },
     ]
   },
 

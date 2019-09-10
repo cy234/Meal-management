@@ -1,3 +1,83 @@
 <nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+
 <view class="home-page" style='margin-top:{{height}}px'>
+  <!-- <view class="search-frame"> -->
+  <view class="search">
+    <view class="search-frame">
+      <view class="search_search">
+        <i class="fa fa-search" style="position: absolute;top: 20%;margin-left:10px;"></i>
+        <input type="text" value="{{inputVal}}" bindinput="inputTyping" bindblur="blur" confirm-type="search" placeholder='请输入关键字' style="padding-left: 10%;"></input>
+
+        <button id="0" class='button' bindtap="bindKeyInput" style="position: absolute;top:0;right:0;">搜索</button>
+      </view>
+
+      <view class='items' wx:if='{{inputVal.length>0}}' hidden='{{viewShowed}}'>
+        <view wx:for='{{foodList}}' wx:key='key'>
+          <view class='item-box' bindtap='food_name' data-index='{{index}}' data-name='{{item.name}}' data-id='{{item.id}}'>
+            <label>{{item.name}}</label>
+          </view>
+        </view>
+      </view>
+
+      <view class='categlist'>
+        <view class="categ">
+          <button class="circ" id="1" bindtap='gotoPage'>
+            <cover-image class="circima" src="/images/guwudianfen.png"></cover-image>
+            <!-- <i class="fa fa-search"style="margin-top:60%;"></i> -->
+          </button>
+          <button class="circ" id="2" bindtap='gotoPage'>
+            <cover-image class="circima" src="/images/doulei.png"></cover-image>
+            <!-- <i class="fa fa-search"style="margin-top:60%;"></i> -->
+          </button>
+          <button class="circ" id="3" bindtap='gotoPage'>
+            <cover-image class="circima" src="/images/shucai.png"></cover-image>
+            <!-- <i class="fa fa-search"style="margin-top:60%;"></i> -->
+          </button>
+        </view>
+        <view class="categ">
+          <text class="text">谷物淀粉类</text>
+          <text class="text">豆类</text>
+          <text class="text">蔬菜类</text>
+        </view>
+        <view class="categ">
+          <button class="circ" id="4" bindtap='gotoPage'>
+            <cover-image class="circima" src="/images/tiaozhipin.png"></cover-image>
+            <!-- <i class="fa fa-search"style="margin-top:60%;"></i> -->
+          </button>
+          <button class="circ" id="5" bindtap='gotoPage'>
+            <cover-image class="circima" src="/images/xiaochilingshi.png"></cover-image>
+            <!-- <i class="fa fa-search"style="margin-top:60%;"></i> -->
+          </button>
+          <button class="circ" id="6" bindtap='gotoPage'>
+            <cover-image class="circima" src="/images/danleijiruzhipin.png"></cover-image>
+            <!-- <i class="fa fa-search"style="margin-top:60%;"></i> -->
+          </button>
+        </view>
+        <view class="categ">
+          <text class="text">调制品类</text>
+          <text class="text">小吃零食类</text>
+          <text class="text">蛋类及乳制品</text>
+        </view>
+        <view class="categ">
+          <button class="circ" id="7" bindtap='gotoPage'>
+            <cover-image class="circima" src="/images/shuiguo.png"></cover-image>
+            <!-- <i class="fa fa-search"style="margin-top:60%;"></i> -->
+          </button>
+          <button class="circ" id="8" bindtap='gotoPage'>
+            <cover-image class="circima" src="/images/jianguo.png"></cover-image>
+            <!-- <i class="fa fa-search"style="margin-top:60%;"></i> -->
+          </button>
+          <button class="circ" id="9" bindtap='gotoPage'>
+            <cover-image class="circima" src="/images/yurouhaixian.png"></cover-image>
+            <!-- <i class="fa fa-search"style="margin-top:60%;"></i> -->
+          </button>
+        </view>
+        <view class="categ">
+          <text class="text">水果类</text>
+          <text class="text">坚果类</text>
+          <text class="text">鱼肉海鲜类</text>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
